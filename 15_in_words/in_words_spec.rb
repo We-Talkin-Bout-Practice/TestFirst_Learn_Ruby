@@ -83,10 +83,12 @@ describe Fixnum do
     1000.in_words.should == 'one thousand'
     32767.in_words.should == 'thirty two thousand seven hundred sixty seven'
     32768.in_words.should == 'thirty two thousand seven hundred sixty eight'
+    632768.in_words.should == 'six hundred thirty two thousand seven hundred sixty eight'
   end
 
   it "reads millions" do
     10_000_001.in_words.should == 'ten million one'
+    123_456_789.in_words.should == 'one hundred twenty three million four hundred fifty six thousand seven hundred eighty nine'
   end
 
   it "reads billions" do
